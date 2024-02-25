@@ -1,6 +1,8 @@
 let scrape = document.getElementById('scrape');
 
 scrape.addEventListener("click", async () => {
+    chrome.tabs.create({ url: 'http://localhost:3000' });
+
     let [tab] = await chrome.tabs.query({active: true, currentWindow: true});
 
     chrome.scripting.executeScript({
@@ -8,6 +10,13 @@ scrape.addEventListener("click", async () => {
         func: scrapePage,
     });
 })
+//     let [tab] = await chrome.tabs.query({active: true, currentWindow: true});
+
+//     chrome.scripting.executeScript({
+//         target: {tabId: tab.id},
+//         func: scrapePage,
+//     });
+// })
 
 function scrapePage() {
     const codeElements = document.querySelectorAll('[data-code-text]');
