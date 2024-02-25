@@ -17,5 +17,11 @@ function scrapePage() {
     codeElements.forEach(element => {
         codeTexts.push(element.getAttribute('data-code-text'));
     });
+
     console.log(codeTexts);
-}
+
+    for (let i = 0; i < codeTexts.length; i++) {
+        if (codeText.includes("api")) {
+            //go to database and get the things associated with the link
+        }
+    }
