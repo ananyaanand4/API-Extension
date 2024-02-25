@@ -1,11 +1,25 @@
 body {
-    min-width: 300px;
+    min-width: 250px;
     background-color: rgb(55, 75, 141);
 }
 
 .title {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
     color: white;
+}
+
+.center {
+    display: flex;
+    flex-direction: column; /* Added to stack children vertically */
+    align-items: center;
+}
+
+#scrape {
+    align-items: center;
+    background-color: white;
+    border-color: rgb(55, 75, 141);;
+    border-radius: 3px;
 }
