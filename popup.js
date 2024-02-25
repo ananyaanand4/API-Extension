@@ -21,7 +21,7 @@ function scrapePage() {
     console.log(codeTexts);
 
     for (let i = 0; i < codeTexts.length; i++) {
-        if (codeText.includes("api")) {
+        if (codeTexts.includes("api")) {
             //go to database and get the things associated with the link
         }
     }
