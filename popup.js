@@ -25,3 +25,4 @@ function scrapePage() {
             //go to database and get the things associated with the link
         }
     }
+}
